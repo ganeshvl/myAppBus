@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="16dp">
+
+    <ImageView
+        android:id="@+id/iv_itembus_bus"
+        android:layout_alignParentLeft="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:id="@+id/tv_itembus_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/iv_itembus_bus"
+        android:paddingRight="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text"
+        android:text="008"/>
+
+    <TextView
+        android:id="@+id/tv_itembus_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/tv_itembus_number"
+        android:layout_alignLeft="@+id/tv_itembus_number"
+        android:paddingRight="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/primary_text"
+        android:text="Interbairros"/>
+
+    <View
+        android:id="@+id/view_itembus_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_alignLeft="@+id/tv_itembus_number"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_itembus_name"
+        android:background="@color/primary"
+        />
+
+</RelativeLayout>
